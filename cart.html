@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cart-container">
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will be displayed here -->
+        <!-- Example item:
+            <div class="cart-item">
+                <div class="item-details">
+                    <span class="product-name">Product Name</span>
+                    <span class="quantity">x1</span>
+                    <span class="price">$10.99</span>
+                </div>
+                <button class="remove-item-btn">&times;</button>
+            </div>
+            -->
+      </div>
+      <div class="cart-summary">
+        <div class="subtotal">
+          Subtotal: <span id="cart-subtotal">$0.00</span>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+      </div>
+      <div id="empty-cart" style="display: none">Your Cart is Empty</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
